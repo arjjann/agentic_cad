@@ -1,0 +1,35 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node / Frontend (if applicable)
+node_modules/
+dist/
+build/
+
+# CAD / Large Temp Exports (uncomment if you don't want to track raw exports)
+# *.step
+# *.stp
+# *.stl
+# *.iges
+# *.igs
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
