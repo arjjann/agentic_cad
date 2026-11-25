@@ -1,0 +1,16 @@
+name: agentic_cad
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - cadquery
+  - pip
+  - pip:
+      - langgraph
+      - langchain
+      - langchain-openai
+      - pydantic
+      - python-dotenv
+      - pytest
+      - mcp>=2.0.0
