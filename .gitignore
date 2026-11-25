@@ -1,35 +1,63 @@
+# Secrets & Environment Variables
 .env
 .env.*
 !.env.example
-*.pem
-*.key
 
-# Python & Virtual Environments
+# Python & Setuptools Packaging
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+*.egg
+*.egg-info/
+.installed.cfg
+build/
+dist/
+develop-eggs/
+eggs/
+.eggs/
+MANIFEST
+
+# Virtual & Conda Environments
 .venv/
 venv/
 env/
+ENV/
+.conda/
+
+# Testing, Coverage & Linters
 .pytest_cache/
-.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
 .mypy_cache/
+.ruff_cache/
 
-# Node / Frontend (if applicable)
-node_modules/
-dist/
-build/
+# Generated CAD Outputs & Temporary Files
+outputs/*
+!outputs/.gitkeep
+generated/*
+!generated/.gitkeep
+*.step
+*.stp
+*.stl
+*.iges
+*.igs
+*.brep
+*.dxf
+*.obj
+*.glb
+*.gltf
+*.log
 
-# CAD / Large Temp Exports (uncomment if you don't want to track raw exports)
-# *.step
-# *.stp
-# *.stl
-# *.iges
-# *.igs
-
-# OS & Editor Files
-.DS_Store
-Thumbs.db
+# IDEs & Editors
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+EOF
